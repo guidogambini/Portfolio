@@ -143,7 +143,7 @@ font-size: ${p => p.theme.fontSize};
     display: flex;
     justify-content: center;
     color: white;
-    
+    margin-top: -2rem;
   }
 
   .anchor {
