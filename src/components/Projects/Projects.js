@@ -8,7 +8,7 @@ import Bit from '../Carousel/gamestore.png';
 
 const Projects = () => {
     return (
-        <div style={{display:'flex', justifyContent:'space-around', alignItems:'center'}}>
+        <div className='tarjeta'>
             <Card name={'Weather App'} imagen={Weather} linkGit={'https://github.com/guidogambini/Weather-App'} linkVercel={'https://weather-app-three-omega.vercel.app/'}/>
             <Card name={'Movie App'} imagen={Film} linkGit={'https://github.com/guidogambini/Movie-App'} linkVercel={'https://movie-app-tau-six.vercel.app/'}/>
             <Card name={'Global App'} imagen={Global} linkGit={'https://github.com/guidogambini/PI-Countries'} linkVercel={'https://global-app.vercel.app/'}/>

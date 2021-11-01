@@ -15,7 +15,7 @@
 }
 
 .profile {
-    height: 31rem;
+    height: 32.30rem;
     margin-top: 2.3rem;
     font-weight: bolder;
     font-size: large;
@@ -45,7 +45,7 @@
 .projects {
     height: 35.2rem;
     width: 100%;
-    background: #700B97;
+    background: white;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -58,6 +58,14 @@
     justify-content: center;
     margin-top: 0em;
     padding-top: 0em;
-    height: 33em;
+    height: 32.7rem;
     overflow: hidden;
+}
+
+.line {
+    height: 29.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
