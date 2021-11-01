@@ -33,7 +33,14 @@
     margin-left: 8rem
 }
 
+.via {
+    color: #3E065F;
+    transition: color 0.7s;
+}
 
+.via:hover {
+    color:black;
+}
 
 .projects {
     height: 35.2rem;

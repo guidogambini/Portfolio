@@ -60,7 +60,7 @@ const Carousel = () => {
             <div className="embla__container">
               {projects.map((prod) => (
                   <div className="embla__slide" key={prod.id}>
-                    <a href={prod.url} target='_blank' className='anchor'><h1 className='nombre'>{prod.name}</h1></a>
+                    <a href={prod.url} target='_blank' className='anchor'><h1 className='nombre1'>{prod.name}</h1></a>
                     <div className="embla__slide__inner">
                       <img
                         className="embla__slide__img"

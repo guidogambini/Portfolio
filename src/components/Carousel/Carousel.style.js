@@ -100,10 +100,7 @@ font-size: ${p => p.theme.fontSize};
         }
       }
 
-      .image{
-        
-        
-      }
+      
 
      
 
@@ -139,7 +136,7 @@ font-size: ${p => p.theme.fontSize};
     }
   }
 
-  .nombre {
+  .nombre1 {
     display: flex;
     justify-content: center;
     color: white;
@@ -152,7 +149,7 @@ font-size: ${p => p.theme.fontSize};
     width: 2em;
     transition: letter-spacing 0.6s;
     :hover {
-      letter-spacing: 0.6rem;
+      letter-spacing: 0.4rem;
     }
     
   }
@@ -168,7 +165,10 @@ font-size: ${p => p.theme.fontSize};
     min-width: 100%;
     max-width: 100%;
     transform: translate(-50%, -50%);
-    
+    transition: transform 0.4s;
+    :hover {
+      transform: translate(-49%, -49%);
+    }
   }
 
 
