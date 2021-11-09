@@ -64,11 +64,13 @@ function App() {
 
       </div>
 
+      {width > 800 ?
       <div className='tech'>
 
           <Tech/>
 
       </div>
+      : null}
 
     </div>
   );
