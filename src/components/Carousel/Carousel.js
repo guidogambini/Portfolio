@@ -16,33 +16,33 @@ const Carousel = () => {
 
     const [viewportRef, embla] = useEmblaCarousel({ loop: true, speed: 1 });
     
-
+    const width = window.screen.width;
   
 
     const projects = [{
         id: 1,
-        name: 'Weather App 🌤 ⭐⭐',
+        name: width > 500 ? 'Weather App 🌤 ⭐⭐' : 'Weather App 🌤',
         projectImage: Weather,
         url: 'https://weather-app-three-omega.vercel.app/',
         description: 'React-Redux Application consuming the required data from an external API.'
     },
     {
         id: 2,
-        name: 'Movie App 🎞 ⭐⭐⭐',
+        name: width > 500 ? 'Movie App 🎞 ⭐⭐⭐' : 'Movie App 🎞',
         projectImage: Film,
         url: 'https://movie-app-tau-six.vercel.app/',
         description: 'React App with the usage of the IMDb API. This site also includes Sweet Alert notifications.'
     },
     {
         id: 3,
-        name: 'Global App 🌍 ⭐⭐⭐⭐',
+        name: width > 500 ? 'Global App 🌍 ⭐⭐⭐⭐' : 'Global App 🌍',
         projectImage: Global,
         url: 'https://global-app.vercel.app/',
         description: 'Full Stack App. Back to Front project using Postgre database. Own App server built up handling Node, Express and Sequelize. Complete React-Redux user interface provided.'
     },
     {
         id: 4,
-        name: '16-Bit Gamestore 🎮 ⭐⭐⭐⭐⭐',
+        name: width > 500 ? '16-Bit Gamestore 🎮 ⭐⭐⭐⭐⭐' : '16-Bit Gamestore 🎮',
         projectImage: Bit,
         url: 'https://16-bit-gamestore.vercel.app/',
         description: 'Full Stack App. Back to Front project using Postgre database. Own App server built up handling Node, Express and Sequelize. Complete React-Redux user interface provided.'

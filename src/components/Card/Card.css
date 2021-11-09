@@ -40,7 +40,12 @@
 
 .apps {
     width:210px; 
-    height:120px
+    height:120px;
+    transition: border-radius 0.5s;
+}
+
+.apps:hover {
+    border-radius: 1rem;
 }
 
 

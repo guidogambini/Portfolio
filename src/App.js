@@ -6,8 +6,10 @@ import Projects from './components/Projects/Projects';
 import TimeLine from './components/TimeLine/TimeLine';
 
 function App() {
-
   
+
+  const width = window.screen.width;
+
   return (
     <div className='mainContainer'>
 
@@ -16,15 +18,22 @@ function App() {
       <div className='profile'>
           <div>
           <div style={{display:'flex', justifyContent: 'space-between'}}>
-          <h1>Who I am?</h1>
+          { width > 400 ? <h1 className='who'>Who I am?</h1> : null}
           </div>
-          <p style={{lineHeight:'2.5rem'}}>¡Hi everyone 👋🏼! I'm Guido Gambini and I consider myself a simple and inclusive person<br/> who has discovered his true passion: programming 💻.
-          After I had finished my studies<br/> in Communication Science and Political Science degrees 👨🏼‍🎓, I have recently spent more<br/> than 800 hours of coding during the Soy Henry bootcamp, and I daily
-          continue diving into<br/> this amazing world. I just hope you can give me the opportunity
-          to take my words into action.</p>
+          { width < 400 ?
+
+            <p className='presentacion'>¡Hi everyone 👋🏼! I'm Guido Gambini and I consider myself a simple and inclusive person who has discovered his true passion: programming 💻.
+            After I had finished my studies in Communication Science and Political Science degrees 👨🏼‍🎓, I have recently spent more than 800 hours of coding during the Soy Henry bootcamp, and I daily
+            continue diving into this amazing world.</p> :
+          
+            <p className='presentacion'>¡Hi everyone 👋🏼! I'm Guido Gambini and I consider myself a simple and inclusive person<br/> who has discovered his true passion: programming 💻.
+            After I had finished my studies<br/> in Communication Science and Political Science degrees 👨🏼‍🎓, I have recently spent more<br/> than 800 hours of coding during the Soy Henry bootcamp, and I daily
+            continue diving into<br/> this amazing world. I just hope you can give me the opportunity
+            to take my words into action.</p>
+          }
           </div>
           <div className="media" >
-                       <h3 style={{fontSize:'3rem', marginBottom:'0em', marginLeft:'-4.5rem', letterSpacing: '0.2rem'}}>Contact me</h3>
+                       <h3 className='contact'>Contact</h3>
                        <a href="https://www.linkedin.com/in/guidogambini/?locale=en_US" target="_blank" className='via' >
                             <i  className="fab fa-linkedin linkedin" > </i>
                        </a>

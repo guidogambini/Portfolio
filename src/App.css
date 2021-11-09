@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
 }
-
+  
 .tech {
     position: fixed;
     bottom: 0;
@@ -15,15 +15,14 @@
 }
 
 .profile {
-    height: 32.30rem;
-    margin-top: 2.3rem;
+    height: 34.60rem;
     font-weight: bolder;
     font-size: large;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     background: #700B97;
-}
+} 
 
 .media {
     display: flex;
@@ -31,7 +30,18 @@
     font-size: 5rem;
     color: black;
     margin-left: 8rem
-}
+} 
+
+.presentacion {
+    line-height: 2.5rem;
+} 
+
+.contact {
+    font-size: 3rem;
+    margin-bottom: -0.2em;
+    margin-left: -2.5rem;
+    letter-spacing: 0.2rem;  
+} 
 
 .via {
     color: #3E065F;
@@ -40,7 +50,7 @@
 
 .via:hover {
     color:black;
-}
+} 
 
 .projects {
     height: 35.2rem;
@@ -49,7 +59,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
+} 
 
 .car {
     background: black;
@@ -60,12 +70,168 @@
     padding-top: 0em;
     height: 32.7rem;
     overflow: hidden;
+  }
+  
+  .line {
+      height: 29.8rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      align-content: center;
+  }
+  
+
+@media screen and (max-width: 800px) {
+
+    .profile {
+        height: 34.91rem;
+        width: 100%;
+        font-weight: bolder;
+        font-size: large;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: #700b97;
+      }
+    
+      .presentacion {
+        line-height: 2.3rem;
+        margin-left: 1rem;
+        font-size: 13px;
+      }
+    
+      .who {
+        font-size: 30px;
+        margin-left: 1rem;
+        letter-spacing: 0.2rem;
+      }
+    
+      .media {
+        display: flex;
+        flex-direction: column;
+        font-size: 5rem;
+        color: black;
+        padding: 2rem;
+      }
+    
+      .contact {
+        font-size: 30px;
+        margin-bottom: 0em;
+        margin-left: -1.0rem;
+        letter-spacing: 0.2rem;
+      }
+    
+      .via {
+        color: #3e065f;
+        transition: color 0.7s;
+      }
+    
+      .via:hover {
+        color: black;
+      }
+    
+      .line {
+        height: 28.8rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+        padding: 2rem;
+      }
+    
+      .projects {
+        height: 106.2rem;
+        margin-top: 8rem;
+        width: 100%;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .tech {
+        position: fixed;
+        bottom: 0;
+        background: white;
+        width: 100%;
+        height: 2rem;
+        padding: 1.2rem;
+        border-top: solid 1px black;
+    }
+
 }
 
-.line {
+
+@media screen and (max-width: 500px) {
+  .profile {
+    height: 34.91rem;
+    width: 100%;
+    font-weight: bolder;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #700b97;
+  }
+
+  .presentacion {
+    text-align: justify;
+    line-height: 1.3rem;
+    margin-left: 3rem;
+    font-size: 12px;
+    margin-right: -4rem;
+    margin-top: 4rem;
+  }
+
+  .who {
+    font-size: 30px;
+    margin-left: 1rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .media {
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    color: black;
+    padding: 2rem;
+    margin-right: 2rem;
+  }
+
+  .contact {
+    font-size: 30px;
+    margin-bottom: 0em;
+    margin-left: -1.2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .via {
+    color: #3e065f;
+    transition: color 0.7s;
+  }
+
+  .via:hover {
+    color: black;
+  }
+
+  .line {
     height: 29.8rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     align-content: center;
+    padding: 2rem;
+  }
+
+  .projects {
+    height: 85.2rem;
+    margin-top: 2rem;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }

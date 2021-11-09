@@ -25,4 +25,88 @@
 .btn:hover {
     color:black;
     background: white;
+} 
+
+.arg {
+    height: 4rem;
+    margin-left: 53rem;
 }
+
+@media screen and (max-width: 800px) {
+
+    .bar {
+        background: black;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: left;
+        position: fixed;
+        width: 100vw;
+        align-items: center;
+    }
+    
+    .btn {
+        margin-left: 1.5rem;
+        color:white;
+        background: black;
+        border: none;
+        border-radius: 1em;
+        height: 100%;
+        cursor: pointer;
+        padding: 1em;
+        font-family: 'Source Sans Pro', sans-serif;
+        letter-spacing: 0.2rem;
+        transition: background 0.7s;
+    }
+    
+    .btn:hover {
+        color:black;
+        background: white;
+    }
+
+    .arg {
+        height: 4rem;
+        margin-left: 16rem;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .bar {
+        background: black;
+        padding: 0.2rem;
+        display: flex;
+        justify-content: left;
+        position: fixed;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .btn {
+        margin-left: 1.5rem;
+        color:white;
+        background: black;
+        border: none;
+        border-radius: 1em;
+        height: 3rem;
+        cursor: pointer;
+        padding: 1em;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 10px;
+        transition: background 0.7s;
+    }
+    
+    .btn:hover {
+        color:black;
+        background: white;
+    }
+
+    .arg {
+        height: 4rem;
+        margin-left: 16rem;
+    }
+
+}
+
+
