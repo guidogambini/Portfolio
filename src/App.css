@@ -165,7 +165,7 @@
 
 @media screen and (max-width: 500px) {
   .profile {
-    height: 34.91rem;
+    height: 37.91rem;
     width: 100%;
     font-weight: bolder;
     font-size: large;
@@ -181,7 +181,7 @@
     margin-left: 3rem;
     font-size: 12px;
     margin-right: -4rem;
-    margin-top: 4rem;
+    margin-top: 0.5rem;
   }
 
   .who {

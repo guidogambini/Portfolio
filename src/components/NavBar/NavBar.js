@@ -1,20 +1,58 @@
-import React from 'react';
-import './NavBar.css';
-import Arg from '../../arg.png';
+import { useState } from "react";
+import "./NavBar.css";
+import Arg from "../../arg.png";
+import { FaTimes } from "react-icons/fa";
+import { AiOutlineMenu } from "react-icons/ai";
 
 function NavBar() {
+  const width = window.screen.width;
 
-    const width = window.screen.width;
+  const [click, setClick] = useState(false);
 
-    return (
-        <nav className='bar'>
-            <button onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})} className='btn'>Profile</button>
-            <button onClick={() => window.scrollTo({top: width < 500 ? 530 : width < 800 ? 500 : 475, behavior: 'smooth'})} className='btn'>Career</button>
-            <button onClick={() => window.scrollTo({top: width < 500 ? 1050 : width < 800 ? 1020 : 990, behavior: 'smooth'})} className='btn'>Apps</button>
-            <button onClick={() => window.scrollTo({top: width < 500 ? 1580 : 1665, behavior: 'smooth'})} className='btn'>Code</button>
-            {width > 500 ? <img src={Arg} className='arg'/> : null}
-        </nav>
-    );
+  const handleClick = () => setClick(!click);
+
+  const handleScroll = (top1, top2, top3) => {
+    window.scrollTo({
+      top: width < 500 ? top1 : width < 800 ? top2 : top3,
+      behavior: "smooth",
+    });
+    setClick(!click);
+  };
+
+  return (
+    <div className='generalCont'>
+      <div className="mobileIcon" onClick={handleClick}>
+        {!click ? <FaTimes/> : <AiOutlineMenu/>}
+      </div>
+      <nav className={click ? "bar" : "bar2"}>
+        <button onClick={() => handleScroll(0, 0, 0)} className="btn">
+          Profile
+        </button>
+        <button
+          onClick={() =>
+            handleScroll(530, 500, 475)}
+          className="btn"
+        >
+          Career
+        </button>
+        <button
+          onClick={() =>
+            handleScroll(1050, 1020, 990)}
+          className="btn"
+        >
+          Apps
+        </button>
+        <button
+          onClick={() =>
+            handleScroll(1580, 1665, 1665)}
+          className="btn"
+        >
+          Code
+        </button>
+        {width > 800 ? <img src={Arg} className="arg" /> : null}
+      </nav>
+    </div>
+  );
 }
 
 export default NavBar;
